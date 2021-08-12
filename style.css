@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#navbar{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background: linear-gradient(rgb(184, 184, 184), rgb(237, 237, 237),rgb(181, 181, 181),rgb(138, 138, 138));
+    z-index: 10;
+}
+#navbar ul{
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    left: 45%;
+}
+#navbar ul li{
+    position: relative;
+    padding: 20px;
+}
+#navbar ul li a{
+    position: relative;
+    /* padding: 30px; */
+    color: rgb(38, 38, 38);
+    font-weight: 600;
+    font-size: 1.2em;
+    width: 300px;
+    height: 55px;
+    /* background: #000; */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: .5s;
+}
+#navbar ul li a:hover{
+    background: linear-gradient(rgb(160, 160, 160), rgb(220, 220, 220),rgb(189, 189, 189),rgb(158, 158, 158));
+    color: rgb(163, 62, 89);
+}
+#welcome-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/whiteline.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#welcome-section img{
+    position: absolute;
+    width: 300px;
+    top: 40%;
+    left: 20%;
+}
+#welcome-section h1{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    font-size: min(2.5em);
+    font-size: 4em;
+    color: #fff;
+    text-shadow: 0 0 40px rgb(73, 73, 73);
+}
+#welcome-section p{
+    position: relative;
+    top: 42%;
+    left: 50%;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 20px rgb(0, 0, 0);
+    font-size: 2em;
+}
+#projects{
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    background-image: url(img/pexels-designecologist-1779487.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+#projects h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 2.4em;
+    margin: 100px;
+    text-shadow: 0 0 20px #000;
+}
+.project-grid{
+    position: relative;
+    /* left: 0%; */
+    /* transform: translateY(-100%); */
+    margin: 0 auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    /* background: #000; */
+    margin-bottom: 100px;
+}
+.project-title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.8em;
+    /* background: #000; */
+    max-height: 500px;
+    height: 320px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.project-grid a{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: auto;
+
+
+}
+.project-title p{
+    position: relative;
+    transform: translateY(500px);
+    opacity: 0;
+    transition: 1s;
+    z-index: 5;
+}
+.over{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(51, 51, 51);
+    opacity: 0;
+}
+.project-title:hover p{
+    transform: translateY(0);
+    opacity: 1;
+}
+.project-title:hover .over{
+    opacity: .7;
+    filter: blur(20px);
+}
+.project-1{
+    background-image: url(img/projects/tech.JPG);
+}
+.project-2{
+    background-image: url(img/projects/product.JPG);
+}
+.project-3{
+    background-image: url(img/projects/survey.JPG);
+}
+.project-4{
+    background-image: url(img/projects/tech.JPG);
+}
+#skills{
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    background-image: url(img/josh-rose-trYl7JYATH0-unsplash.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#skills h1{
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+}
+#skills .skill-flex{
+    position: relative;
+    display: flex;
+    width: 80%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#skills .skill-flex .languages{
+    margin: 0 100px;
+    color: rgb(255, 255, 255);
+}
+#skills .skill-flex .languages h2{
+    text-align: center;
+}
+#skills .skill-flex .languages .skill-item{
+    position: relative;
+    display: flex;
+}
+#skills .skill-flex .languages .skill-item img{
+    position: relative;
+    width: 100px;
+    margin: 50px 30px 20px 100px;
+}
+#skills .skill-flex .languages .skill-item h3{
+    color: rgb(255, 255, 255);
+    margin-top: 80px;
+}
+#contact{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 150px;
+    background: rgb(202, 202, 202);
+    justify-content: space-around;
+}
+#contact .link-item{
+    display: flex;
+    padding-top: 20px;
+    position: relative;
+}
+#contact .link-item a{
+    text-decoration: none;
+    display: flex;
+    color: #000;
+}
+#contact .link-item  img{
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+#contact .link-item p{
+    position: relative;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+@media (max-width:500px) {
+    .project-grid{
+        grid-template-columns: 1fr;
+    }
+    #skills .skill-flex{
+        flex-direction: column;
+    }
+    #contact{
+        height: 300px;
+        flex-direction: column;
+        padding-left: 40px;
+    }
+}
